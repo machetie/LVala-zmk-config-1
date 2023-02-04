@@ -34,11 +34,11 @@
         //│  ESC     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ; :     │  ' "     │
             &kp ESC    &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  SUPER   │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │  ALT     │
-            &kp LGUI   &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RALT
+        //│  SHIFT   │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  , <     │  . >     │  / ?     │  ALT     │
+            &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RALT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │  CTRL    │  L LR    │  SPACE   │   │  ENTER   │  R LR    │  SHIFT   │
-                                             &kp LCTRL  &mo LEF    &kp SPACE      &kp ENTER  &mo RIG    &kp LSHFT
+        //                                 │  CTRL    │  L LR    │  SPACE   │   │  ENTER   │  R LR    │  SUPER   │
+                                             &kp LCTRL  &mo LEF    &kp SPACE      &kp ENTER  &mo RIG    &kp LGUI
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -52,11 +52,11 @@
         //│          │          │          │          │          │          │   │          │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  CTRL    │          │          │          │          │          │   │          │          │          │          │          │          │
-            &kp LCTRL  &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │          │   │          │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │  COMMAND │          │          │   │          │          │          │
-                                             &kp LGUI   &trans     &trans         &trans     &trans     &trans
+        //                                 │  COMMAND │          │          │   │          │          │  CTRL    │
+                                             &kp LGUI   &trans     &trans         &trans     &trans     &kp LCTRL
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
